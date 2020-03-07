@@ -1,0 +1,75 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./static/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #030040;">
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <a class="navbar-brand" href="/index">Arrhythmia Prediction</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <i class="fas fa-2x fa-user mt-2 mr-3" height=20px></i>   
+            </li>
+            <li class="nav-item">
+                <a role="button" class="btn btn-danger" href="/index">Home</a>
+                <a role="button" class="btn btn-danger" href="/about">About</a>
+                <a role="button" class="btn btn-danger" href="/aboutUs">About Us</a>
+            </li>
+        </ul>         
+    </div>
+</nav>
+<div class="container">
+
+    <br>
+    <h1 class="font-weight-bold text-danger">Arrhythmia Prediction Form</h1><br><br>
+    <form action="/result" style="font-size: 20px;" method="POST">
+      <div class="form-group row">
+      <label for="p-r_interval" class="col-sm-2 col-form-label text-primary">p-r_interval</label>
+      <div class="col-md-4">
+      <input type="text" class="form-control" id="p-r_interval" name="p-r_interval">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="q-t_interval" class="col-sm-2 col-form-label text-success">q-t_interval</label>
+      <div class="col-md-4">
+      <input type="text" class="form-control" id="q-t_interval" name="q-t_interval">
+      </div>
+    </div>
+      <div class="form-group row">
+      <label for="t_interval" class="col-sm-2 col-form-label text-danger">t_interval</label>
+      <div class="col-md-4">
+      <input type="text" class="form-control" id="t_interval" name="t_interval">
+      </div>
+      </div>
+      <div class="form-group row">
+      <label for="p_interval" class="col-sm-2 col-form-label text-warning">p_interval</label>
+      <div class="col-md-4">
+      <input type="text" class="form-control" id="p_interval" name="p_interval">
+      </div>
+      </div>
+      <div class="form-group row">
+      <label for="qrs_wave" class="col-sm-2 col-form-label text-info">qrs_wave</label>
+      <div class="col-md-4">
+      <input type="text" class="form-control" id="qrs_wave" name="qrs_wave">
+      </div>
+      </div>
+      <div class="form-group row">
+      <label for="T_wave" class="col-sm-2 col-form-label" style="color: white;">T_wave</label>
+      <div class="col-md-4">
+      <input type="text" class="form-control" id="T_wave" name="T_wave">
+      </div>
+      </div>
+      <div>
+      <input type="submit" class="btn btn-danger" value="Submit">
+      </div>
+    </form>
+    
+  </div>
+  </body>
+  </html>
